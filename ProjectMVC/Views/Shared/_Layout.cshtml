@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+    <header>
+        <center>
+            <a href="/Home/Index" class="btn btn-primary">Index</a>
+            <a href="/Home/AboutUs" class="btn btn-dark">AboutUs</a>
+            <a href="/Home/ContactUs" class="btn btn-danger">ContactUs</a>
+            <a href="/Home/Privecy" class="btn btn-secondary">Privecy</a>
+        </center>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="fixed-bottom">
+        <center>
+            Product by Hema Mohamed @DateTime.Now
+        </center>
+    </footer>
+</body>
+</html>
